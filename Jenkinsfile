@@ -2,7 +2,7 @@ pipeline {
   agent any
   stages {
     stage('for main branch') {
-      where {
+      when {
         branch 'main'
       }
       steps {
