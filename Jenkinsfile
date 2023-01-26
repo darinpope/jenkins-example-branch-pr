@@ -22,7 +22,7 @@ pipeline {
         changeRequest()
       }
       steps {
-        echo 'dev branch'
+        echo 'pull request'
       }
     }
   }
