@@ -9,5 +9,21 @@ pipeline {
         echo 'main branch'
       }
     }
+    stage('for dev branch') {
+      when {
+        branch 'dev'
+      }
+      steps {
+        echo 'dev branch'
+      }
+    }
+    stage('for pull request') {
+      when {
+        changeRequest()
+      }
+      steps {
+        echo 'dev branch'
+      }
+    }
   }
 }
