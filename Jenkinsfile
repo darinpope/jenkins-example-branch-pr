@@ -9,12 +9,12 @@ pipeline {
         echo 'main branch'
       }
     }
-    stage('for stage branch') {
+    stage('for OUMAR branch') {
       when {
-        branch 'stage'
+        branch 'backend-v2.0'
       }
       steps {
-        echo 'stage branch'
+        echo 'OUMAR branch'
       }
     }
     stage('for pull request') {
